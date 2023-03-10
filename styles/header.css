@@ -1,0 +1,87 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px;
+    border-style: solid;
+    background-color: rgb(228, 226, 226);
+    height: 50px;
+    border-color: rgb(207, 205, 205);
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 1px rgb(170, 168, 168);
+}
+.mainsection1, .mainsection3{
+    border: 1px;
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    align-items: center;
+    padding-left: 10px;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.innersection1, .innersection2,
+.innersection4, .innersection5{
+    color: black;
+    margin-right: 10px;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: Roboto, Arial;
+    font-weight: 700;
+    border-width: 1px;
+    border-color: rgb(181, 178, 178);
+    background-color: rgb(53, 151, 221);
+    transition: background-color 0.15ms;
+    cursor: pointer;
+}
+.innersection1:hover, .innersection2:hover, .innersection4:hover,
+.innersection5:hover{
+    background-color: black;
+    color: white;  
+}
+.search-button{
+    font-size: 18px;
+    padding: 8px;
+    padding-left: 5px;
+    border-color: rgb(193, 189, 189);
+    border-style: solid;
+}
+.search-icon{
+    height: 20px;
+    padding-left: 15px;
+}
+.innersection6{
+    border-style: solid;
+    border-color: black;
+    width: 50px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    margin-left: -2px;
+    border-color: rgb(207, 205, 205);
+    border-width: 1px;
+    box-shadow: inset 1px 1px 1px rgb(170, 168, 168);
+    position: relative;
+    display: flex;   
+}
+.innersection3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.innersection6 .tooltip{
+    position: absolute;
+    bottom: -25px;
+    background-color: rgb(187, 187, 187);
+    opacity: 0;
+    padding: 2px;
+    transition: opacity 0.15ms;
+    pointer-events: none;
+}
+.innersection6:hover .tooltip{
+    opacity: 1;
+}
